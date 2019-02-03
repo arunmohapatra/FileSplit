@@ -1,11 +1,9 @@
 
 /*Encode */
-package com.split.file;
+package com.split1.file;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.util.LinkedList;
-import java.util.Scanner;
 
 public class FileEncoder {
     private File f;

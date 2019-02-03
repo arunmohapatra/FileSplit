@@ -1,5 +1,5 @@
 /* File Split */
-package com.split.file;
+package com.split1.file;
 
 import java.io.File;
 import java.io.FileInputStream;
