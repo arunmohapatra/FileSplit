@@ -22,7 +22,8 @@ public class Splitting {
     LinkedHashMap<String, byte[]> split(){
         int chunkNo = 1;
         LinkedHashMap<String,byte[]> chunks = new LinkedHashMap<>();
-        try( FileInputStream fileInputStream = new FileInputStream(new File(this.fileName))){
+        try( FileInputStream fileInputStream
+                     = new FileInputStream(new File(this.fileName))){
             byte[] buffer = new byte[this.chunkSize];
             int read = 0;
             while( (read = fileInputStream.read(buffer) )> 0){

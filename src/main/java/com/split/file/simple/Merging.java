@@ -15,7 +15,8 @@ public class Merging {
     /*Merge the chunks */
     void mergeAndCreateFile(LinkedHashMap<String,byte[]> chunks, String fileName){
 
-        try (FileOutputStream fileOutputStream = new FileOutputStream(new File(fileName))){
+        try (FileOutputStream fileOutputStream
+                     = new FileOutputStream(new File(fileName))){
             for(Map.Entry chunk : chunks.entrySet()){
                  byte[] bytes = (byte[])chunk.getValue();
                 fileOutputStream.write(bytes);
