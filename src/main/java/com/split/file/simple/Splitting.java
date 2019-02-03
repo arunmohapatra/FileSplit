@@ -7,7 +7,7 @@ import java.util.LinkedHashMap;
 public class Splitting {
 
     private String fileName;
-    private int chunkSize = 1024;
+    private int chunkSize = 1024 * 1024; // default chunk size is 1 MB
 
     public Splitting(String filename){
         this.fileName = filename;
